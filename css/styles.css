@@ -1,0 +1,501 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../font/RobotoSlab-Bold.eot');
+    src: url('../font/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../font/RobotoSlab-Bold.woff') format('woff'),
+        url('../font/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+sup {
+    font-size: 0.6em;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.row {
+    margin: 0 -14px;
+    font-size: 0;
+}
+
+.column {
+    display: inline-block;
+    margin: 0 14px;
+    width: 219px;
+    font-size: 14px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+
+.header {
+    padding: 15.5px 0;
+    background-color: #1f1f56;
+}
+
+.wrapper ul {
+    list-style: none;
+}
+
+.menu {
+    float: left;
+    padding-left: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.menu a {
+    color: #b1b1d2;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 24px;
+}
+
+.menu a:hover {
+    color: #fd8300;
+}
+
+.socialnetworks {
+    float: right;
+}
+
+.socialnetworks li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.socialnetworks a {
+    display: block;
+    background-image: url(../image/create.png);
+}
+
+a.fb {
+    width: 10px;
+    height: 19px;
+    background-position: -12px 0;
+}
+
+a.fb:hover {
+    background-position: 0 0;
+}
+
+a.tw {
+    width: 18px;
+    height: 15px;
+    background-position: -89px -1px;
+}
+
+a.tw:hover {
+    background-position: -68px -1px;
+}
+
+a.inst {
+    width: 19px;
+    height: 19px;
+    background-position: -47px 0;
+}
+
+a.inst:hover {
+    background-position: -25px 0;
+}
+
+.neck {
+    padding: 30px 0;
+}
+
+.with-shadow {
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.tele,
+.mail {
+    padding-left: 48px;
+}
+
+.phone,
+.skype,
+.email {
+    position: relative;
+}
+
+.phone:before,
+.skype:before,
+.email:before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 1px;
+    background: url(../image/create.png);
+}
+
+.phone:before {
+    width: 16px;
+    height: 18px;
+    background-position: -22px -22px;
+}
+
+.skype:before {
+    width: 18px;
+    height: 19px;
+    background-position: 0 -21px;
+}
+
+.email:before {
+    width: 17px;
+    height: 13px;
+    background-position: -41px -26px;
+}
+
+.tele a {
+    color: #25252c;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.tele a:hover {
+    text-decoration: underline;
+}
+
+.tele p,
+.mail p {
+    padding: 4px 0;
+}
+
+.mail a {
+    color: #25252c;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.mail a:hover {
+    text-decoration: underline;
+}
+
+.call {
+    text-align: right;
+}
+
+.call a {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #25252c;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #fd8300;
+    border-radius: 25px;
+}
+
+.call a:hover {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.image {
+    padding: 60px 0 40px;
+    background: black url(../image/herobackground.png);
+    background-size: cover;
+}
+.maintext {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    background-position: center top;
+    font: 700 30px "Roboto Slab";
+}
+.text {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.price {
+    color: #fd8300;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.price span {
+    font-size: 40px;
+}
+.main {
+    padding: 50px 0 45px;
+}
+.main p {
+    color: #666;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.with-aside {
+    width: 713px;
+}
+
+.maincontent {
+    float: left;
+}
+
+.content {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.content a {
+    padding-top: 25px;
+    display: block;
+    color: #fd8300;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.content a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+.content h1 {
+    padding-bottom: 25px;
+    color: #24242b;
+    font: 700 24px "Roboto Slab";
+}
+
+.content p {
+    color: #666;
+    font: 14px/24px "Arial";
+}
+
+table {
+    margin: 25px 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tbody tr:hover td {
+    color: #fff;
+    background: #fd8300;
+}
+
+td,
+th {
+    padding: 5px;
+    border: 1px solid #cdcddd;
+}
+
+th {
+    color: #fff;
+    font: 700 14px/24px "Roboto Slab";
+    background-color: #1f1f56;
+}
+
+td {
+    color: #666;
+    font: 14px/24px "Arial";
+    background-color: #e4e4ec;
+}       
+
+hr {
+    display: block;
+    margin: 30px 0;
+    border-color: transparent;
+    border-top-color: #e4e4ec;
+}
+.list {
+    float: right;
+}
+.sidebar>li:not(:first-child) {
+    border-top: 1px solid #cdcddd;
+}
+.sidebar>li>a {
+    position: relative;
+}
+.sidebar>li>a::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 18px;
+    width: 7px;
+    height: 7px;
+    border: 2px solid transparent;
+    border-top-color: #666;
+    border-right-color: #666;
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+}
+.sidebar>li:hover>a:after {
+    border-top-color: #fff;
+    border-right-color: #fff;
+    transform: rotate(135deg);
+}
+
+.list ul {
+    padding-left: 0;
+    border-radius: 0 0 3px 3px;
+    list-style: none;
+}
+
+.list p {
+    padding: 15px;
+    color: #fff;
+    font: 16px/24px "Roboto Slab";
+    background-color: #1f1f56;
+    border-radius: 3px 3px 0 0;
+}
+
+.list a {
+    padding: 15px;
+    display: block;
+    color: #25252c;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.list ul {
+    background-color: #e4e4ec
+}
+
+.list li:hover {
+    background-color: #fd8300;
+}
+
+.sidebar>li:hover>a {
+    color: #fff;
+}
+.menumenu {
+    display: none;
+}
+
+.list li:hover .menumenu{
+    display: block;
+}
+
+.menumenu a {
+    padding-left: 30px;
+    color: #666;
+    font-size: 14px;
+}
+
+.menumenu li:hover {
+    background-color: #cecedd;
+}
+
+.menumenu a:hover {
+    color: #666;
+}
+.box {
+    color: #9999a6;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.box a {
+    text-decoration: none;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
+.popularlist h2 {
+    padding-bottom: 20px;
+    color: #24242b;
+    font: 700 24px "Roboto Slab" sans-serif;
+}
+
+.popularlist h3 {
+    color: #24242b;
+    font: 700 14px/24px "Arial";
+}
+
+.popularlist a {
+    color: #1f1f56;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.adress,
+.cobsult,
+.recvisit {
+
+
+}
+
+
+.contact {
+    width: 920px;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.consult {
+;
+
+
+.footer {
+    padding: 40px 0;
+    background-color: #ededf5;
+}
+
+.footer .column {
+    vertical-align: top;
+}
+
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footermenu a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.footermenu a:hover {
+    color: #fd8300;
+    text-decoration: underline;
+}
+
+.parking {
+    background-color: #dcdce6;
+}
+
+.parking p {
+    padding: 15px;
+    color: #9999a6;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+}
