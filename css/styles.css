@@ -443,16 +443,19 @@ hr {
     line-height: 24px;
 }
 
-.adress,
-.cobsult,
-.recvisit {
-
-
+.flex-space {
+    display: flex;
+    justify-content: space-between;
 }
 
+.column-contact {
+    flex: 0 0 50%;
+}
 
-.contact {
-    width: 920px;
+.recvisit {
+    display: flex;
+    justify-content: center;
+    padding-left: 80px;
 }
 
 .contact a {
