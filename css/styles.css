@@ -462,6 +462,12 @@ hr {
     text-decoration: none;
 }
 
+.column-contact strong {
+    font: 14px/24px "Roboto Slab";
+    color: #24242b;
+}
+
+
 
 .footer {
     padding: 40px 0;
