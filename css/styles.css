@@ -16,6 +16,7 @@
 
 body {
     font-family: "Arial", sans-serif;
+    cursor: url(../image/cursor.cur), auto
 }
 
 sup {
@@ -457,9 +458,6 @@ hr {
 .contact a {
     text-decoration: none;
 }
-
-.consult {
-;
 
 
 .footer {
