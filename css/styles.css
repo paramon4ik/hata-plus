@@ -458,8 +458,10 @@ hr {
     padding-left: 80px;
 }
 
-.contact a {
+.column-contact a {
     text-decoration: none;
+    font: 18px/24px "Arial";
+    color: #25252c;
 }
 
 .column-contact strong {
@@ -467,8 +469,16 @@ hr {
     color: #24242b;
 }
 
+.column-contact p {
+    font: 14px/24px;
+    color: #666666;
+}
 
-
+.adress-mail {
+    text-decoration: underline;
+    font: normal 16px/24px;
+    color: #25252c;
+}
 .footer {
     padding: 40px 0;
     background-color: #ededf5;
