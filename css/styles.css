@@ -450,7 +450,40 @@ hr {
 
 .column-contact {
     flex: 0 0 50%;
+    margin-right: 27px;
 }
+
+.column-contact h2 {
+    font: 700 14px/24px "Roboto Slab";
+    color: #24242b;
+}
+
+.box input,
+.box textarea {
+    font: 13px/21px "Arial";
+    color: #9999a6;
+    font-style: italic;
+}
+
+.namephone input {
+    margin-right: 10px;
+    width: 225px;
+}
+
+.theme input {
+    margin: 10px 0;
+    width: 466px;
+}
+
+.button {
+    width: 140px;
+    height: 41px;
+    border-radius: 21px;
+    border: none;
+    background-color: #fd8300;
+}
+
+
 
 .recvisit {
     display: flex;
