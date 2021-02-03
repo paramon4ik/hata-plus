@@ -23,12 +23,6 @@ sup {
     font-size: 0.6em;
 }
 
-.clear:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 .wrapper {
     margin: 0 auto;
     max-width: 960px;
@@ -54,12 +48,16 @@ sup {
     background-color: #1f1f56;
 }
 
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
 .wrapper ul {
     list-style: none;
 }
 
 .menu {
-    float: left;
     padding-left: 0;
 }
 
@@ -80,9 +78,6 @@ sup {
     color: #fd8300;
 }
 
-.socialnetworks {
-    float: right;
-}
 
 .socialnetworks li {
     display: inline-block;
@@ -129,12 +124,26 @@ a.inst:hover {
 }
 
 .with-shadow {
-    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .tele,
 .mail {
     padding-left: 48px;
+}
+
+.stick {
+    position: relative;
+}
+
+.stick:before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 7px;
+    width: 1px;
+    height: 51px;
+    background-color: #e4e4ec;
 }
 
 .phone,
@@ -223,6 +232,13 @@ a.inst:hover {
     background: black url(../image/herobackground.png);
     background-size: cover;
 }
+
+.homepage {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
 .maintext {
     color: #fff;
     text-align: center;
@@ -230,6 +246,7 @@ a.inst:hover {
     background-position: center top;
     font: 700 30px "Roboto Slab";
 }
+
 .text {
     color: #fff;
     text-align: center;
@@ -247,9 +264,11 @@ a.inst:hover {
 .price span {
     font-size: 40px;
 }
+
 .main {
     padding: 50px 0 45px;
 }
+
 .main p {
     color: #666;
     font-size: 14px;
@@ -258,10 +277,6 @@ a.inst:hover {
 
 .with-aside {
     width: 713px;
-}
-
-.maincontent {
-    float: left;
 }
 
 .content {
@@ -294,34 +309,34 @@ a.inst:hover {
     font: 14px/24px "Arial";
 }
 
-table {
+.styled-table {
     margin: 25px 0;
     width: 100%;
     border-collapse: collapse;
 }
 
-tbody tr:hover td {
+.styled-table tbody tr:hover td {
     color: #fff;
     background: #fd8300;
 }
 
-td,
-th {
+.styled-table td,
+.styled-table th {
     padding: 5px;
     border: 1px solid #cdcddd;
 }
 
-th {
+.styled-table th {
     color: #fff;
     font: 700 14px/24px "Roboto Slab";
     background-color: #1f1f56;
 }
 
-td {
+.styled-table td {
     color: #666;
     font: 14px/24px "Arial";
     background-color: #e4e4ec;
-}       
+}
 
 hr {
     display: block;
@@ -329,15 +344,16 @@ hr {
     border-color: transparent;
     border-top-color: #e4e4ec;
 }
-.list {
-    float: right;
-}
+
+
 .sidebar>li:not(:first-child) {
     border-top: 1px solid #cdcddd;
 }
+
 .sidebar>li>a {
     position: relative;
 }
+
 .sidebar>li>a::after {
     content: "";
     position: absolute;
@@ -351,6 +367,7 @@ hr {
     transform: rotate(45deg);
     transition: all 0.5s ease;
 }
+
 .sidebar>li:hover>a:after {
     border-top-color: #fff;
     border-right-color: #fff;
@@ -390,11 +407,12 @@ hr {
 .sidebar>li:hover>a {
     color: #fff;
 }
+
 .menumenu {
     display: none;
 }
 
-.list li:hover .menumenu{
+.list li:hover .menumenu {
     display: block;
 }
 
@@ -411,6 +429,7 @@ hr {
 .menumenu a:hover {
     color: #666;
 }
+
 .box {
     color: #9999a6;
     font-size: 13px;
@@ -428,7 +447,7 @@ hr {
 .popularlist h2 {
     padding-bottom: 20px;
     color: #24242b;
-    font: 700 24px "Roboto Slab" sans-serif;
+    font: 700 24px "Roboto Slab"sans-serif;
 }
 
 .popularlist h3 {
@@ -446,49 +465,29 @@ hr {
 .flex-space {
     display: flex;
     justify-content: space-between;
+    margin: 0 -13px;
+}
+
+article h1 {
+    margin-bottom: 25px;
+    font: 700 24px "Roboto Slab";
+    color: #24242b;
 }
 
 .column-contact {
     flex: 0 0 50%;
-    margin-right: 27px;
+    padding: 0 13px;
+    box-sizing: border-box;
+}
+
+.adress {
+    margin-right: 80px;
 }
 
 .column-contact h2 {
-    font: 700 14px/24px "Roboto Slab";
+    margin-bottom: 15px;
+    font: 700 14px "Roboto Slab";
     color: #24242b;
-}
-
-.box input,
-.box textarea {
-    font: 13px/21px "Arial";
-    color: #9999a6;
-    font-style: italic;
-}
-
-.namephone input {
-    margin-right: 10px;
-    width: 225px;
-}
-
-.theme input {
-    margin: 10px 0;
-    width: 466px;
-}
-
-.button {
-    width: 140px;
-    height: 41px;
-    border-radius: 21px;
-    border: none;
-    background-color: #fd8300;
-}
-
-
-
-.recvisit {
-    display: flex;
-    justify-content: center;
-    padding-left: 80px;
 }
 
 .column-contact a {
@@ -502,9 +501,56 @@ hr {
     color: #24242b;
 }
 
-.column-contact p {
+.column-contact p { 
+    margin-bottom: 8px;
     font: 14px/24px;
     color: #666666;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    font: italic 13px/21px "Arial";
+    color: #9999a6;
+    box-sizing: border-box;
+}
+
+.contact-form td {
+    padding: 5px 5px 5px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 8px 15px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.button {
+    width: 140px;
+    height: 41px;
+    border-radius: 21px;
+    border: none;
+    background-color: #fd8300;
+    font: bold 14px/24px "Arial";
+    color: #fff;
+    text-align: center;
+}
+
+.checkbox {
+    margin: 0 10px 0 30px;
+}
+
+.recvisit {
+    display: flex;
+    justify-content: center;
+    padding-left: 80px;
 }
 
 .adress-mail {
@@ -512,6 +558,13 @@ hr {
     font: normal 16px/24px;
     color: #25252c;
 }
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
 .footer {
     padding: 40px 0;
     background-color: #ededf5;
